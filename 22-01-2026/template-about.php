@@ -171,6 +171,7 @@ $src = get_stylesheet_directory_uri();
     </div>
 </div>
 
+<!-- santu roy -->
 <!-- popup -->
 <div class="culture-popup" id="culture-popup" role="dialog" aria-modal="true" hidden>
     <div class="popup-overlay"></div>
