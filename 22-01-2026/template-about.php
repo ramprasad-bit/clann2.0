@@ -170,16 +170,4 @@ $src = get_stylesheet_directory_uri();
         <div id="popup-body"></div>
     </div>
 </div>
-
-<!-- santu roy -->
-<!-- popup -->
-<div class="culture-popup" id="culture-popup" role="dialog" aria-modal="true" hidden>
-    <div class="popup-overlay"></div>
-
-    <div class="popup-content">
-        <button class="popup-close" aria-label="Close popup">&times;</button>
-        <h3 id="popup-title"></h3>
-        <div id="popup-body"></div>
-    </div>
-</div>
 <?php get_footer(); ?>
