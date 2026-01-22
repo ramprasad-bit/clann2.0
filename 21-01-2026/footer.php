@@ -125,10 +125,6 @@
 		</form>		
 	</div>
 </div>
-
-<!-- New Section -->
-<div> New Address </div>
-
 </div>
 </div>
 <?php wp_footer(); ?>
