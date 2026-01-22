@@ -4,14 +4,11 @@ if(!defined('ABSPATH')){ die('You are not allowed'); }
 
 if(!function_exists('add_action')){ exit; }
 
-
-
 /* Template Name: About us */ 
 get_header();
-$page_id 				= get_the_id(); 
+$page_id = get_the_id(); 
 $src = get_stylesheet_directory_uri(); 
 ?>
-
 <!--intro-->
 <section class="section intro-row about-intro">
 	<div class="container">
@@ -46,7 +43,6 @@ $src = get_stylesheet_directory_uri();
 		</div>
 	</div>
 </section>
-<!--intro end-->
 <!-- find out more start -->
 <section class="section primary-color get-involved cluid-visit">
 	<div class="container">
@@ -57,7 +53,6 @@ $src = get_stylesheet_directory_uri();
 		</div>
 	</div>
 </section>
-<!-- find out more end -->
 <!-- Our four values start -->
 <section class="section fourvalue-row">
 	<div class="container">

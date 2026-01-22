@@ -76,7 +76,6 @@ $no_img = get_field('no_img','option');
 				</div>
 				<?php $counter++; endwhile; ?>
 			</div>
-
 			<?php if($hm_hta_button) { ?>
 				<div class="button-row">
 					<a href="<?php echo $hm_hta_button['url']; ?>" class="basic_btn" aria-label="click here to <?php echo $hm_hta_button['title']; ?>"><?php echo $hm_hta_button['title']; ?></a>
