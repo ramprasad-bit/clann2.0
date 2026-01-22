@@ -160,18 +160,6 @@ $src = get_stylesheet_directory_uri();
 	</div>':''; ?>
 </section>
 <?php } ?>		
-
-<!-- Our publications end -->
-<?php
-	if(get_field('abt_wd_visibility')==1){
-	$abt_wd_content = get_field('abt_wd_content');
-?>
-<section class="section meeting-row">
-	<?php echo $abt_wd_content?'<div class="container">
-		<div class="global-heading text-center">'.$abt_wd_content.'</div>
-	</div>':''; ?>
-</section>
-<?php } ?>
 <!-- popup -->
 <div class="culture-popup" id="culture-popup" role="dialog" aria-modal="true" hidden>
     <div class="popup-overlay"></div>
