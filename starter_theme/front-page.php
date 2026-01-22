@@ -1,51 +1,38 @@
 <?php 
-
 if(!defined('ABSPATH')){ die('You are not allowed'); }
-
 if(!function_exists('add_action')){ exit; }
-
 get_header(); 
-
 $src = get_stylesheet_directory_uri(); 
-
 //Intro 
 $hm_int_visibility = get_field('hm_int_visibility');
 $hm_int_heading    = get_field('hm_int_heading');
 $hm_int_content    = get_field('hm_int_content');
 $hm_int_link       = get_field('hm_int_link');
 $hm_int_image      = get_field('hm_int_image');
-
 //How to apply 
 $hm_hta_visibility = get_field('hm_hta_visibility');
 $hm_hta_heading    = get_field('hm_hta_heading');
 $hm_hta_steps      = get_field('hm_hta_steps');
 $hm_hta_button     = get_field('hm_hta_button');
-
 //story 
 $hm_st_visibility   = get_field('hm_st_visibility');
 $hm_os_heading      = get_field('hm_os_heading');
-
 //Green divider 
 $hm_gd_visibility   = get_field('hm_gd_visibility');
 $hm_gd_text 		= get_field('hm_gd_text');
 $hm_gd_button       = get_field('hm_gd_button');
-
 //Housing supports 
 $hm_hs_visibility = get_field('hm_hs_visibility');
 $hm_hs_heading    = get_field('hm_hs_heading');
 $hm_hs_content    = get_field('hm_hs_content');
 $hm_hs_button     = get_field('hm_hs_button');
 $hm_hs_image      = get_field('hm_hs_image');
-
 //News 
 $hm_on_visibility = get_field('hm_on_visibility');
 $hm_on_heading = get_field('hm_on_heading');
 $hm_on_tagline = get_field('hm_on_tagline');
-
 $no_img = get_field('no_img','option'); 
-
 ?>
-
 <?php if($hm_int_visibility == true) { ?>
 <!--intro-->
 <section class="section intro-row">
@@ -94,8 +81,7 @@ $no_img = get_field('no_img','option');
 				<div class="button-row">
 					<a href="<?php echo $hm_hta_button['url']; ?>" class="basic_btn" aria-label="click here to <?php echo $hm_hta_button['title']; ?>"><?php echo $hm_hta_button['title']; ?></a>
 				</div>
-			<?php } ?>
-			
+			<?php } ?>			
 		</div>
 		<?php endif; ?>
 	</div>
@@ -111,18 +97,14 @@ $no_img = get_field('no_img','option');
 			</div>
 		<?php } ?>
 		<div class="stories-slider" id="stories-slider">
-
 			<?php
 				$args = array(
 				    'category_name' => 'story', // category slug
 				    'posts_per_page' => -1       // show all posts
 				);
-
 				$query = new WP_Query($args);
-
 				if ($query->have_posts()) :
 				    while ($query->have_posts()) : $query->the_post();
-
 				    	if (has_post_thumbnail()) {
 		                    $post_image = get_the_post_thumbnail_url(get_the_ID(),'img_463_297'); // thumbnail size
 		                }else{
@@ -131,7 +113,6 @@ $no_img = get_field('no_img','option');
 		                $excerpt = get_the_excerpt();
 		                $date = get_the_date('jS F, Y');
 				        ?>
-
 				        <div class="single-box">
 							<div class="single-img">
 								<img src="<?php echo $post_image; ?>" alt="<?php the_title(); ?>">
@@ -143,7 +124,6 @@ $no_img = get_field('no_img','option');
 								<p><?php echo esc_html($excerpt); ?></p>
 							</div>
 						</div>
-
 				        <?php
 				    endwhile;
 				    wp_reset_postdata();
@@ -151,7 +131,6 @@ $no_img = get_field('no_img','option');
 				    echo '<div class="single-box"><strong><p>No stories found.</p></strong></div>';
 				endif;
 			?>
-
 		</div>
 	</div>
 </section>
