@@ -2,16 +2,16 @@
 	</div>
 </div>
 <?php 
-	$locations = get_nav_menu_locations();
-	$src = get_stylesheet_directory_uri(); 
-	$footer_logo = get_field('footer_logo', 'option');
-	$site_address = get_field('site_address', 'option');
-	$social_media_heading = get_field('social_media_heading', 'option');
-	$site_socal_media = get_field('site_socal_media', 'option');
-	$copy_right_text = get_field('copy_right_text', 'option');
-	$email_add = get_field('head_email', 'option');
-	$phone_num = get_field('headphone', 'option');
-	$help_line = get_field('head_help_line', 'option');
+$locations = get_nav_menu_locations();
+$src = get_stylesheet_directory_uri(); 
+$footer_logo = get_field('footer_logo', 'option');
+$site_address = get_field('site_address', 'option');
+$social_media_heading = get_field('social_media_heading', 'option');
+$site_socal_media = get_field('site_socal_media', 'option');
+$copy_right_text = get_field('copy_right_text', 'option');
+$email_add = get_field('head_email', 'option');
+$phone_num = get_field('headphone', 'option');
+$help_line = get_field('head_help_line', 'option');
 ?>
 <!-- Footer -->
 <footer id="colophon" class="site-footer">
@@ -32,7 +32,7 @@
 						</ul>
 					</div>
 				<?php } ?>
-			</div>			
+			</div>
 			<div class="foot-col contact_infoleft">
 				<div class="contact_info">
 					<ul aria-label="Clann contact information">
